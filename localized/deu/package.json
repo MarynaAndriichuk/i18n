@@ -1,0 +1,51 @@
+{
+  "name": "node-i18n",
+  "private": true,
+  "version": "1.0.0",
+  "supportedVersions": [
+    "v13.x",
+    "v12.x",
+    "v10.x"
+  ],
+  "description": "The home of translated Node.js documentation",
+  "repository": "https://github.com/nodejs/i18n",
+  "contributors": [
+    "Dhruv Jain <dhruvjainpenny@gmail.com>",
+    "Vanessa Yuen <vanessa.yh.yuen@gmail.com>",
+    "Zeke Sikelianos <zeke@sikelianos.com>"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "collect": "node script/collect.js",
+    "upload-crowdin-glossary": "node script/upload-crowdin-glossary.js",
+    "test": "jest",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "walk-sync": "^2.1.0"
+  },
+  "devDependencies": {
+    "builtins": "^3.0.1",
+    "crowdin-glossary": "^1.2.0",
+    "dotenv-safe": "^8.2.0",
+    "download": "^8.0.0",
+    "fs-extra": "^9.0.0",
+    "globals": "^13.0.0",
+    "jest": "^25.3.0",
+    "semver": "^7.3.2",
+    "standard": "^14.3.3",
+    "superagent": "^5.2.2"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost"
+  }
+}
